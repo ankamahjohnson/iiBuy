@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iiBuy digital Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!--HEADER / INTRO SECTION-->
+  <section id="intro">
+    <header class="header">
+      <div class="logo">iiBUY</div>
+      <nav class="nav">
+        <a href="#intro">Intro</a>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+      </button>
+    </header>
+
+    <div class="intro-content">
+      <div class="intro-text">
+        <h1>iiBUY DIGITAL STORE</h1>
+        <a href="#shop" class="shop-btn">SHOP NOW</a>
+      </div>
+      <div class="intro-image">
+        <img src="/capstone project 2/images /heroImage.png" alt="Gadgets" />
+      </div>
+    </div>
+  </section>
+
+  <!--ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <p>
+      iiBuy Store is a hypothetical online store for gadgets we believe
+      every 'Millenial' or 'Gen-Z' should have today. We've got mobile phones,
+      laptops, smartwatches and other gadgets. Explore all our gadgets and
+      choose the ones that suit you.
+    </p>
+  </section>
+
+  <!-- SHOP / PRODUCTS SECTION -->
+  <section id="shop" class="shop-section">
+    <h2>OUR GADGETS</h2>
+    <div class="products-grid" id="productsGrid">
+
+      <!-- Product 1 -->
+      <div class="product-card" id="product-1">
+        <img src="/capstone project 2/images /product1.jpg" alt="Samsung TV" class="product-img"/>
+        <p class="product-name">SAMSUNG TV</p>
+        <button
+          class="cart-action-btn"
+          onclick="toggleCart(1)">
+          ADD TO CART
+        </button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" id="product-2">
+        <img src="/capstone project 2/images /product2.jpg" alt="Pixel 4a" class="product-img"/>
+        <p class="product-name">PIXEL 4a</p>
+        <button
+          class="cart-action-btn"
+          onclick="toggleCart(2)">
+          ADD TO CART
+        </button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card" id="product-3">
+        <img src="/capstone project 2/images /product3.jpg" alt="PS 5" class="product-img"/>
+        <p class="product-name">PS 5</p>
+        <button
+          class="cart-action-btn"
+          onclick="toggleCart(3)">
+          ADD TO CART
+        </button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card" id="product-4">
+        <img src="/capstone project 2/images /product4.png" alt="Macbook Air" class="product-img"/>
+        <p class="product-name">MACBOOK AIR</p>
+        <button
+          class="cart-action-btn"
+          onclick="toggleCart(4)">
+          ADD TO CART
+        </button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card" id="product-5">
+        <img src="/capstone project 2/images /product5.png" alt="Apple Watch" class="product-img"/>
+        <p class="product-name">APPLE WATCH</p>
+        <button
+          class="cart-action-btn"
+          onclick="toggleCart(5)">
+          ADD TO CART
+        </button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card" id="product-6">
+        <img src="/capstone project 2/images /product6.jpg" alt="Air Pods" class="product-img"/>
+        <p class="product-name">AIR PODS</p>
+        <button
+          class="cart-action-btn"
+          onclick="toggleCart(6)">
+          ADD TO CART
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="footer-logo">iiBUY</div>
+    <p class="footer-text">Designed and Crafted by Ankamah Johnson</p>
+  </footer>
+
+  <!-- CART MODAL -->
+  <div class="modal-overlay" id="cartOverlay">
+    <div class="cart-modal" id="cartModal">
+
+      <div class="cart-header">
+        <div class="logo">iiBUY</div>
+        <button class="cart-btn" id="cartModalBtn">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cartCountModal">0</span>
+        </button>
+      </div>
+
+      <!-- A. Items Section -->
+      <div class="cart-items-section">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>S/N</th>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="cartTableBody">
+            <!-- filled by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- B. User Details Section -->
+      <div class="user-details-section">
+        <input
+          type="text"
+          id="userName"
+          placeholder="Your Name"
+          onblur="validateName()"
+        />
+        <span class="error-msg" id="nameError"></span>
+
+        <input
+          type="email"
+          id="userEmail"
+          placeholder="Your Email"
+          onblur="validateEmail()"
+        />
+        <span class="error-msg" id="emailError"></span>
+
+        <input
+          type="tel"
+          id="userPhone"
+          placeholder="Your Phone Number"
+          onblur="validatePhone()"
+        />
+        <span class="error-msg" id="phoneError"></span>
+      </div>
+
+      <!-- C. Total Amount Section -->
+      <div class="total-section">
+        <p>Total Amount to be Paid</p>
+        <h3 id="totalAmount">₵0</h3>
+      </div>
+
+      <!-- D. Actions Section -->
+      <div class="actions-section">
+        <button class="continue-btn" onclick="closeCart()">
+          Continue Shopping
+        </button>
+        <button class="checkout-btn" onclick="checkout()">
+          Checkout
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SUMMARY MODAL -->
+  <div class="modal-overlay" id="summaryOverlay">
+    <div class="summary-modal" id="summaryModal">
+      <p id="summaryMessage"></p>
+      <i class="fa-solid fa-circle-check summary-icon"></i>
+      <h3>Summary</h3>
+      <table class="summary-table">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Item</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody id="summaryTableBody">
+          <!-- filled by JavaScript -->
+        </tbody>
+      </table>
+      <button class="ok-btn" onclick="closeSummary()">Ok</button>
+    </div>
+  </div>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
