@@ -8,18 +8,44 @@ https://ankamahjohnson.github.io/iiBuy/
 
 
 ## Features
-- Calculates exact age in years, months, and days with proper handling of leap years and month transitions
-- Total seconds alive calculated and displayed dynamically
-- Real-time live updating seconds. Seconds update automatically every second after calculation for a dynamic experience.
-- Clean dark UI with cinematic looping background video
-- Bold orange accent typography for key numbers
-- Date picker input with Calculate button
-- Default state displays "0 years, 0 months and 0 days"
-- Accurate age calculation using JavaScript's Date() object
-- Input Validation — Prevents selection of future dates.
+- 🏠 **Landing Page** with four structured sections
+- 🛒 **Shopping Cart System**
+  - Add products to cart with a single click
+  - Remove products from cart on the landing page
+  - Cart button updates in real time to reflect
+    number of items
 
+- 🧾 **Cart Modal**
+  - Displays all items added to cart
+  - Increase or decrease quantity per item
+  - Prices update dynamically based on quantity
+  - Remove items directly from the cart modal
+  - Total amount updates automatically
 
-- Fully responsive design across all screen sizes
+- 📋 **User Details Form**
+  - Collects name, email and phone number
+  - Validates each field on blur
+  - Checks for empty fields, valid email format
+    and correct phone number length
+
+- 💳 **Paystack Checkout**
+  - Fully functional payment integration
+  - Runs in Test Mode
+  - Checkout button validates form before
+    firing Paystack modal
+
+- ✅ **Order Summary Modal**
+  - Appears after every successful payment
+  - Displays customer name dynamically
+  - Shows full list of items bought and
+    their quantities
+  - OK button clears cart and resets page
+
+- 📱 **Responsive Design**
+  - Products stack vertically on mobile
+  - Grid layout on desktop
+  - Fully usable across all screen sizes
+
 
 
 ## Tech Stack
