@@ -4,7 +4,7 @@ A fully functional Paystack integrated e-commerce web application built or desig
 
 ## Live Demo
 View Live 🌐
-https://ankamahjohnson.github.io/iiBuy/
+https://ankamahjohnson.github.io/iibuy/
 
 
 ## Features
