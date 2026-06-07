@@ -1,2 +1,2 @@
 # iiBuy
-A digital E-commerce built with HTML, CSS and JavaScript with an integrated Paystack API
+A fully functional Paystack integrated e-commerce web application built or designed to sell gadgets to millennials and Gen-Z consumers across Africa, featuring a complete shopping cart system and live payment method (Momo & Banking visa card).
