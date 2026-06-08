@@ -1,5 +1,5 @@
 # iiBuy
-A fully functional Paystack integrated e-commerce web application built or designed to sell gadgets to millennials and Gen-Z consumers across Africa, featuring a complete shopping cart system and live payment method (Momo & Banking visa card).
+A fully functional Paystack API integrated e-commerce web application built or designed to sell gadgets to millennials and Gen-Z consumers across Africa, featuring a complete shopping cart system and live payment method (Momo & Banking visa card).
 
 
 ## Live Demo
