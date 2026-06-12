@@ -4,7 +4,7 @@ A fully functional Paystack API integrated e-commerce web application built to s
 
 ## Live Demo
 View Live 🌐
-https://ankamahjohnson.github.io/iiBuy/
+https://ankamahjohnson.github.io/E-Makola/
 
 
 ## Features
