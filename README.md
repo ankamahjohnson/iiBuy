@@ -1,5 +1,5 @@
 # E-Makola 
-A fully functional Paystack API integrated e-commerce web application built to sell gadgets to millennials and Gen-Z consumers across Africa, featuring a complete shopping cart system, live payment method (Momo & Banking visa card), dark/light mode, and persistent data using localStorage
+A fully functional e-commerce web app with Paystack API integration built to sell gadgets to millennials and Gen-Z consumers across Africa, featuring a complete shopping cart system, live payment method (Momo & Banking visa card), dark/light mode, and persistent data using localStorage
 
 
 ## Live Demo
