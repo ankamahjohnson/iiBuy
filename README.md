@@ -46,7 +46,11 @@ https://ankamahjohnson.github.io/E-Makola/
 - Dark and Light mode toggle with localStorage persistence
 - All modals close when clicking on the overlay
 - Fully responsive design (mobile-first)
-
+  
+### 📱 Responsiveness
+- Optimized mobile experience with vertical stacking
+- Clean grid layout on tablets and desktops
+- Fully functional across all screen sizes
 
 ## Tech Stack
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
